@@ -4,7 +4,7 @@ from datetime import datetime
 from pathlib import Path
 
 arquivo_diario = Path("diario.txt")
-
+#aplicação em processo
 def salvar(event=None):
     texto = entrada.get("1.0", tk.END).strip()
     if not texto:
@@ -39,7 +39,9 @@ def on_enter(e):
 def on_leave(e, color):
     e.widget['background'] = color
 
-janela = tk.Tk()
+
+
+#problemas de applicação aqui, rever
 janela.title("Anotações de Segurança")
 janela.geometry("500x520")
 janela.resizable(False, False)
